@@ -1,0 +1,802 @@
+{
+  "statistics": {
+    "num_wavs": 49,
+    "num_words": 232,
+    "num_entities": 0,
+    "correct_transcriptions": 13,
+    "correct_intent_names": 0,
+    "correct_words": 132,
+    "correct_entities": 0,
+    "transcription_accuracy": 0.5689655172413793,
+    "intent_accuracy": 1,
+    "entity_accuracy": 1
+  },
+  "actual": {
+    "turn_the_living_room_lamp_on.wav": {
+      "text": "turn the living room lamp on",
+      "transcribe_seconds": 0.1493823528289795,
+      "wav_seconds": 1.8754375,
+      "likelihood": 0.4459744575321694,
+      "word_error": {
+        "expected": "turn the living room lamp on",
+        "actual": "turn the living room lamp on",
+        "words": 6,
+        "correct": 6,
+        "errors": 0
+      }
+    },
+    "turn_the_bedroom_light_on.wav": {
+      "text": "turn on the on",
+      "transcribe_seconds": 0.13279461860656738,
+      "wav_seconds": 1.7113125,
+      "likelihood": 0.004227123226736368,
+      "word_error": {
+        "expected": "turn THE BEDROOM LIGHT on",
+        "actual": "turn *** ON      THE   on",
+        "words": 5,
+        "correct": 2,
+        "errors": 3
+      }
+    },
+    "make_bedroom_light_blue.wav": {
+      "text": "make the",
+      "transcribe_seconds": 0.13231706619262695,
+      "wav_seconds": 1.6304375,
+      "likelihood": 0.9986008174733972,
+      "word_error": {
+        "expected": "make BEDROOM LIGHT BLUE",
+        "actual": "make ***     ***   THE",
+        "words": 4,
+        "correct": 1,
+        "errors": 3
+      }
+    },
+    "set_the_bedroom_light_green.wav": {
+      "text": "set the",
+      "transcribe_seconds": 0.15256214141845703,
+      "wav_seconds": 1.8740625,
+      "likelihood": 0.8315853192551865,
+      "word_error": {
+        "expected": "set the BEDROOM LIGHT GREEN",
+        "actual": "set the ***     ***   ***",
+        "words": 5,
+        "correct": 2,
+        "errors": 3
+      }
+    },
+    "turn_living_room_lamp_off.wav": {
+      "text": "turn living room lamp off",
+      "transcribe_seconds": 0.17009687423706055,
+      "wav_seconds": 1.869375,
+      "likelihood": 0.5293667865961891,
+      "word_error": {
+        "expected": "turn living room lamp off",
+        "actual": "turn living room lamp off",
+        "words": 5,
+        "correct": 5,
+        "errors": 0
+      }
+    },
+    "turn_on_living_room_lamp.wav": {
+      "text": "turn on living room lamp",
+      "transcribe_seconds": 0.1618344783782959,
+      "wav_seconds": 1.7538125,
+      "likelihood": 0.5107996359438807,
+      "word_error": {
+        "expected": "turn on  living room lamp",
+        "actual": "turn on  living room lamp",
+        "words": 5,
+        "correct": 5,
+        "errors": 0
+      }
+    },
+    "set_bedroom_light_red.wav": {
+      "text": "the",
+      "transcribe_seconds": 0.16108322143554688,
+      "wav_seconds": 1.5356875,
+      "likelihood": 0.002023920163007766,
+      "word_error": {
+        "expected": "SET BEDROOM LIGHT RED",
+        "actual": "*** ***     ***   THE",
+        "words": 4,
+        "correct": 0,
+        "errors": 4
+      }
+    },
+    "make_the_bedroom_light_red.wav": {
+      "text": "make the",
+      "transcribe_seconds": 0.14696955680847168,
+      "wav_seconds": 1.7993125,
+      "likelihood": 0.8492353332577315,
+      "word_error": {
+        "expected": "make the BEDROOM LIGHT RED",
+        "actual": "make the ***     ***   ***",
+        "words": 5,
+        "correct": 2,
+        "errors": 3
+      }
+    },
+    "turn_off_the_living_room_lamp.wav": {
+      "text": "turn on the living room lamp",
+      "transcribe_seconds": 0.17934489250183105,
+      "wav_seconds": 1.865875,
+      "likelihood": 0.2848348989889636,
+      "word_error": {
+        "expected": "turn OFF the living room lamp",
+        "actual": "turn ON  the living room lamp",
+        "words": 6,
+        "correct": 5,
+        "errors": 1
+      }
+    },
+    "turn_garage_light_off.wav": {
+      "text": "turn garage light on",
+      "transcribe_seconds": 0.18023300170898438,
+      "wav_seconds": 1.6310625,
+      "likelihood": 0.6799440846251309,
+      "word_error": {
+        "expected": "turn garage light OFF",
+        "actual": "turn garage light ON",
+        "words": 4,
+        "correct": 3,
+        "errors": 1
+      }
+    },
+    "turn_on_the_bedroom_light.wav": {
+      "text": "turn on the",
+      "transcribe_seconds": 0.12663769721984863,
+      "wav_seconds": 1.6889375,
+      "likelihood": 0.020236809336038216,
+      "word_error": {
+        "expected": "turn on  the BEDROOM LIGHT",
+        "actual": "turn on  the ***     ***",
+        "words": 5,
+        "correct": 3,
+        "errors": 2
+      }
+    },
+    "turn_the_garage_light_on.wav": {
+      "text": "turn the garage light on",
+      "transcribe_seconds": 0.14134526252746582,
+      "wav_seconds": 1.7806875,
+      "likelihood": 0.41586204266049387,
+      "word_error": {
+        "expected": "turn the garage light on",
+        "actual": "turn the garage light on",
+        "words": 5,
+        "correct": 5,
+        "errors": 0
+      }
+    },
+    "set_bedroom_light_to_green.wav": {
+      "text": "turn on the",
+      "transcribe_seconds": 0.18349742889404297,
+      "wav_seconds": 1.918875,
+      "likelihood": 0.0357578267629985,
+      "word_error": {
+        "expected": "SET BEDROOM LIGHT TO  GREEN",
+        "actual": "*** ***     TURN  ON  THE",
+        "words": 5,
+        "correct": 0,
+        "errors": 5
+      }
+    },
+    "set_the_bedroom_light_to_red.wav": {
+      "text": "set the",
+      "transcribe_seconds": 0.15877485275268555,
+      "wav_seconds": 1.8886875,
+      "likelihood": 0.9230154685029752,
+      "word_error": {
+        "expected": "set the BEDROOM LIGHT TO  RED",
+        "actual": "set the ***     ***   *** ***",
+        "words": 6,
+        "correct": 2,
+        "errors": 4
+      }
+    },
+    "turn_off_garage_light.wav": {
+      "text": "tell on",
+      "transcribe_seconds": 0.17797017097473145,
+      "wav_seconds": 1.5268125,
+      "likelihood": 9.717754288723676e-05,
+      "word_error": {
+        "expected": "TURN OFF GARAGE LIGHT",
+        "actual": "***  *** TELL   ON",
+        "words": 4,
+        "correct": 0,
+        "errors": 4
+      }
+    },
+    "whats_the_temperature.wav": {
+      "text": "whats the temperature",
+      "transcribe_seconds": 0.1311497688293457,
+      "wav_seconds": 1.2703125,
+      "likelihood": 0.36413991733386375,
+      "word_error": {
+        "expected": "whats the temperature",
+        "actual": "whats the temperature",
+        "words": 3,
+        "correct": 3,
+        "errors": 0
+      }
+    },
+    "turn_on_bedroom_light.wav": {
+      "text": "turn on the",
+      "transcribe_seconds": 0.13061237335205078,
+      "wav_seconds": 1.4681875,
+      "likelihood": 0.9997999968180895,
+      "word_error": {
+        "expected": "turn on  BEDROOM LIGHT",
+        "actual": "turn on  ***     THE",
+        "words": 4,
+        "correct": 2,
+        "errors": 2
+      }
+    },
+    "set_the_bedroom_light_to_blue.wav": {
+      "text": "set the",
+      "transcribe_seconds": 0.12256073951721191,
+      "wav_seconds": 1.9223125,
+      "likelihood": 0.9108192338377085,
+      "word_error": {
+        "expected": "set the BEDROOM LIGHT TO  BLUE",
+        "actual": "set the ***     ***   *** ***",
+        "words": 6,
+        "correct": 2,
+        "errors": 4
+      }
+    },
+    "turn_living_room_lamp_on.wav": {
+      "text": "turn living room lamp on",
+      "transcribe_seconds": 0.1781296730041504,
+      "wav_seconds": 1.8249375,
+      "likelihood": 0.6433598149929083,
+      "word_error": {
+        "expected": "turn living room lamp on",
+        "actual": "turn living room lamp on",
+        "words": 5,
+        "correct": 5,
+        "errors": 0
+      }
+    },
+    "turn_garage_light_on.wav": {
+      "text": "turn garage light on",
+      "transcribe_seconds": 0.14324474334716797,
+      "wav_seconds": 1.56525,
+      "likelihood": 0.6101458405761516,
+      "word_error": {
+        "expected": "turn garage light on",
+        "actual": "turn garage light on",
+        "words": 4,
+        "correct": 4,
+        "errors": 0
+      }
+    },
+    "set_bedroom_light_to_red.wav": {
+      "text": "turn the",
+      "transcribe_seconds": 0.19952106475830078,
+      "wav_seconds": 1.8243125,
+      "likelihood": 0.739164316569824,
+      "word_error": {
+        "expected": "SET BEDROOM LIGHT TO   RED",
+        "actual": "*** ***     ***   TURN THE",
+        "words": 5,
+        "correct": 0,
+        "errors": 5
+      }
+    },
+    "how_cold_is_it.wav": {
+      "text": "how cold make",
+      "transcribe_seconds": 0.10258984565734863,
+      "wav_seconds": 1.1351875,
+      "likelihood": 4.3752429693197253e-05,
+      "word_error": {
+        "expected": "how cold IS  IT",
+        "actual": "how cold *** MAKE",
+        "words": 4,
+        "correct": 2,
+        "errors": 2
+      }
+    },
+    "turn_off_the_garage_light.wav": {
+      "text": "turn off the garage light",
+      "transcribe_seconds": 0.16986918449401855,
+      "wav_seconds": 1.7536875,
+      "likelihood": 0.38105489461480313,
+      "word_error": {
+        "expected": "turn off the garage light",
+        "actual": "turn off the garage light",
+        "words": 5,
+        "correct": 5,
+        "errors": 0
+      }
+    },
+    "set_the_bedroom_light_blue.wav": {
+      "text": "set the",
+      "transcribe_seconds": 0.15665149688720703,
+      "wav_seconds": 1.821875,
+      "likelihood": 0.8066020036213458,
+      "word_error": {
+        "expected": "set the BEDROOM LIGHT BLUE",
+        "actual": "set the ***     ***   ***",
+        "words": 5,
+        "correct": 2,
+        "errors": 3
+      }
+    },
+    "turn_bedroom_light_on.wav": {
+      "text": "turn on the on",
+      "transcribe_seconds": 0.13371944427490234,
+      "wav_seconds": 1.51225,
+      "likelihood": 0.003104603154448195,
+      "word_error": {
+        "expected": "turn BEDROOM LIGHT on",
+        "actual": "turn ON      THE   on",
+        "words": 4,
+        "correct": 2,
+        "errors": 2
+      }
+    },
+    "turn_bedroom_light_off.wav": {
+      "text": "turn on the",
+      "transcribe_seconds": 0.13924884796142578,
+      "wav_seconds": 1.5841875,
+      "likelihood": 0.07431062656749607,
+      "word_error": {
+        "expected": "turn BEDROOM LIGHT OFF",
+        "actual": "turn ***     ON    THE",
+        "words": 4,
+        "correct": 1,
+        "errors": 3
+      }
+    },
+    "how_hot_is_it.wav": {
+      "text": "how the",
+      "transcribe_seconds": 0.12578177452087402,
+      "wav_seconds": 1.1364375,
+      "likelihood": 0.0003062717269426849,
+      "word_error": {
+        "expected": "how HOT IS  IT",
+        "actual": "how *** *** THE",
+        "words": 4,
+        "correct": 1,
+        "errors": 3
+      }
+    },
+    "turn_on_the_garage_light.wav": {
+      "text": "turn the garage light",
+      "transcribe_seconds": 0.1501619815826416,
+      "wav_seconds": 1.7390625,
+      "likelihood": 0.8905523098811051,
+      "word_error": {
+        "expected": "turn ON  the garage light",
+        "actual": "turn *** the garage light",
+        "words": 5,
+        "correct": 4,
+        "errors": 1
+      }
+    },
+    "set_bedroom_light_green.wav": {
+      "text": "set the",
+      "transcribe_seconds": 0.16097307205200195,
+      "wav_seconds": 1.606,
+      "likelihood": 0.9988005807676449,
+      "word_error": {
+        "expected": "set BEDROOM LIGHT GREEN",
+        "actual": "set ***     ***   THE",
+        "words": 4,
+        "correct": 1,
+        "errors": 3
+      }
+    },
+    "make_the_bedroom_light_blue.wav": {
+      "text": "make the light blue",
+      "transcribe_seconds": 0.13539958000183105,
+      "wav_seconds": 1.8198125,
+      "likelihood": 0.7323211651995617,
+      "word_error": {
+        "expected": "make the BEDROOM light blue",
+        "actual": "make the ***     light blue",
+        "words": 5,
+        "correct": 4,
+        "errors": 1
+      }
+    },
+    "turn_off_the_bedroom_light.wav": {
+      "text": "turn off the",
+      "transcribe_seconds": 0.147993803024292,
+      "wav_seconds": 1.713375,
+      "likelihood": 0.3816269722186727,
+      "word_error": {
+        "expected": "turn off the BEDROOM LIGHT",
+        "actual": "turn off the ***     ***",
+        "words": 5,
+        "correct": 3,
+        "errors": 2
+      }
+    },
+    "turn_on_garage_light.wav": {
+      "text": "turn on garage light",
+      "transcribe_seconds": 0.14113974571228027,
+      "wav_seconds": 1.4819375,
+      "likelihood": 0.9993001638513812,
+      "word_error": {
+        "expected": "turn on  garage light",
+        "actual": "turn on  garage light",
+        "words": 4,
+        "correct": 4,
+        "errors": 0
+      }
+    },
+    "set_the_bedroom_light_to_green.wav": {
+      "text": "set the",
+      "transcribe_seconds": 0.1575489044189453,
+      "wav_seconds": 1.984375,
+      "likelihood": 0.8931389602352068,
+      "word_error": {
+        "expected": "set the BEDROOM LIGHT TO  GREEN",
+        "actual": "set the ***     ***   *** ***",
+        "words": 6,
+        "correct": 2,
+        "errors": 4
+      }
+    },
+    "turn_off_living_room_lamp.wav": {
+      "text": "turn living room lamp",
+      "transcribe_seconds": 0.18662524223327637,
+      "wav_seconds": 1.8040625,
+      "likelihood": 0.15799152547938775,
+      "word_error": {
+        "expected": "turn OFF living room lamp",
+        "actual": "turn *** living room lamp",
+        "words": 5,
+        "correct": 4,
+        "errors": 1
+      }
+    },
+    "set_bedroom_light_to_blue.wav": {
+      "text": "light",
+      "transcribe_seconds": 0.17763948440551758,
+      "wav_seconds": 1.8570625,
+      "likelihood": 0.002772842033306804,
+      "word_error": {
+        "expected": "SET BEDROOM light TO  BLUE",
+        "actual": "*** ***     light *** ***",
+        "words": 5,
+        "correct": 1,
+        "errors": 4
+      }
+    },
+    "what_time_is_it.wav": {
+      "text": "the",
+      "transcribe_seconds": 0.09840583801269531,
+      "wav_seconds": 1.1301875,
+      "likelihood": 0.9998999934083855,
+      "word_error": {
+        "expected": "WHAT TIME IS  IT",
+        "actual": "***  ***  *** THE",
+        "words": 4,
+        "correct": 0,
+        "errors": 4
+      }
+    },
+    "set_the_bedroom_light_red.wav": {
+      "text": "set the",
+      "transcribe_seconds": 0.15622830390930176,
+      "wav_seconds": 1.7854375,
+      "likelihood": 0.8449147590790688,
+      "word_error": {
+        "expected": "set the BEDROOM LIGHT RED",
+        "actual": "set the ***     ***   ***",
+        "words": 5,
+        "correct": 2,
+        "errors": 3
+      }
+    },
+    "turn_on_the_living_room_lamp.wav": {
+      "text": "turn on the living room lamp",
+      "transcribe_seconds": 0.13208317756652832,
+      "wav_seconds": 1.8286875,
+      "likelihood": 0.3440997618275901,
+      "word_error": {
+        "expected": "turn on  the living room lamp",
+        "actual": "turn on  the living room lamp",
+        "words": 6,
+        "correct": 6,
+        "errors": 0
+      }
+    },
+    "turn_off_bedroom_light.wav": {
+      "text": "turn on the",
+      "transcribe_seconds": 0.1300520896911621,
+      "wav_seconds": 1.500125,
+      "likelihood": 0.5916376921216856,
+      "word_error": {
+        "expected": "turn OFF BEDROOM LIGHT",
+        "actual": "turn *** ON      THE",
+        "words": 4,
+        "correct": 1,
+        "errors": 3
+      }
+    },
+    "tell_me_the_time.wav": {
+      "text": "tell me the time",
+      "transcribe_seconds": 0.10624098777770996,
+      "wav_seconds": 1.0709375,
+      "likelihood": 0.4216835656846194,
+      "word_error": {
+        "expected": "tell me  the time",
+        "actual": "tell me  the time",
+        "words": 4,
+        "correct": 4,
+        "errors": 0
+      }
+    },
+    "turn_the_garage_light_off.wav": {
+      "text": "turn the garage light on",
+      "transcribe_seconds": 0.1672816276550293,
+      "wav_seconds": 1.8425625,
+      "likelihood": 0.538713332462623,
+      "word_error": {
+        "expected": "turn the garage light OFF",
+        "actual": "turn the garage light ON",
+        "words": 5,
+        "correct": 4,
+        "errors": 1
+      }
+    },
+    "make_bedroom_light_red.wav": {
+      "text": "make the",
+      "transcribe_seconds": 0.15873360633850098,
+      "wav_seconds": 1.6043125,
+      "likelihood": 0.8309202399758785,
+      "word_error": {
+        "expected": "make BEDROOM LIGHT RED",
+        "actual": "make ***     ***   THE",
+        "words": 4,
+        "correct": 1,
+        "errors": 3
+      }
+    },
+    "turn_the_living_room_lamp_off.wav": {
+      "text": "turn the living room lamp off",
+      "transcribe_seconds": 0.17313051223754883,
+      "wav_seconds": 1.9220625,
+      "likelihood": 0.14717659263482294,
+      "word_error": {
+        "expected": "turn the living room lamp off",
+        "actual": "turn the living room lamp off",
+        "words": 6,
+        "correct": 6,
+        "errors": 0
+      }
+    },
+    "set_bedroom_light_blue.wav": {
+      "text": "set the",
+      "transcribe_seconds": 0.14742493629455566,
+      "wav_seconds": 1.5358125,
+      "likelihood": 0.9987006941258598,
+      "word_error": {
+        "expected": "set BEDROOM LIGHT BLUE",
+        "actual": "set ***     ***   THE",
+        "words": 4,
+        "correct": 1,
+        "errors": 3
+      }
+    },
+    "turn_the_bedroom_light_off.wav": {
+      "text": "turn on the off",
+      "transcribe_seconds": 0.1664268970489502,
+      "wav_seconds": 1.7713125,
+      "likelihood": 0.001021791114161178,
+      "word_error": {
+        "expected": "turn THE BEDROOM LIGHT off",
+        "actual": "turn *** ON      THE   off",
+        "words": 5,
+        "correct": 2,
+        "errors": 3
+      }
+    },
+    "make_bedroom_light_green.wav": {
+      "text": "make the",
+      "transcribe_seconds": 0.18285179138183594,
+      "wav_seconds": 1.6989375,
+      "likelihood": 0.9987006941258598,
+      "word_error": {
+        "expected": "make BEDROOM LIGHT GREEN",
+        "actual": "make ***     ***   THE",
+        "words": 4,
+        "correct": 1,
+        "errors": 3
+      }
+    },
+    "is_the_garage_door_open.wav": {
+      "text": "is the garage door on",
+      "transcribe_seconds": 0.15475201606750488,
+      "wav_seconds": 1.788875,
+      "likelihood": 0.9984010941324442,
+      "word_error": {
+        "expected": "is  the garage door OPEN",
+        "actual": "is  the garage door ON",
+        "words": 5,
+        "correct": 4,
+        "errors": 1
+      }
+    },
+    "make_the_bedroom_light_green.wav": {
+      "text": "make the",
+      "transcribe_seconds": 0.14226007461547852,
+      "wav_seconds": 1.883375,
+      "likelihood": 0.9997999968180895,
+      "word_error": {
+        "expected": "make the BEDROOM LIGHT GREEN",
+        "actual": "make the ***     ***   ***",
+        "words": 5,
+        "correct": 2,
+        "errors": 3
+      }
+    },
+    "is_the_garage_door_closed.wav": {
+      "text": "is the garage door closed",
+      "transcribe_seconds": 0.16350030899047852,
+      "wav_seconds": 1.831875,
+      "likelihood": 0.6607709443405785,
+      "word_error": {
+        "expected": "is  the garage door closed",
+        "actual": "is  the garage door closed",
+        "words": 5,
+        "correct": 5,
+        "errors": 0
+      }
+    }
+  },
+  "expected": {
+    "turn_the_living_room_lamp_on.wav": {
+      "text": "turn the living room lamp on"
+    },
+    "turn_the_bedroom_light_on.wav": {
+      "text": "turn the bedroom light on"
+    },
+    "make_bedroom_light_blue.wav": {
+      "text": "make bedroom light blue"
+    },
+    "set_the_bedroom_light_green.wav": {
+      "text": "set the bedroom light green"
+    },
+    "turn_living_room_lamp_off.wav": {
+      "text": "turn living room lamp off"
+    },
+    "turn_on_living_room_lamp.wav": {
+      "text": "turn on living room lamp"
+    },
+    "set_bedroom_light_red.wav": {
+      "text": "set bedroom light red"
+    },
+    "make_the_bedroom_light_red.wav": {
+      "text": "make the bedroom light red"
+    },
+    "turn_off_the_living_room_lamp.wav": {
+      "text": "turn off the living room lamp"
+    },
+    "turn_garage_light_off.wav": {
+      "text": "turn garage light off"
+    },
+    "turn_on_the_bedroom_light.wav": {
+      "text": "turn on the bedroom light"
+    },
+    "turn_the_garage_light_on.wav": {
+      "text": "turn the garage light on"
+    },
+    "set_bedroom_light_to_green.wav": {
+      "text": "set bedroom light to green"
+    },
+    "set_the_bedroom_light_to_red.wav": {
+      "text": "set the bedroom light to red"
+    },
+    "turn_off_garage_light.wav": {
+      "text": "turn off garage light"
+    },
+    "whats_the_temperature.wav": {
+      "text": "whats the temperature"
+    },
+    "turn_on_bedroom_light.wav": {
+      "text": "turn on bedroom light"
+    },
+    "set_the_bedroom_light_to_blue.wav": {
+      "text": "set the bedroom light to blue"
+    },
+    "turn_living_room_lamp_on.wav": {
+      "text": "turn living room lamp on"
+    },
+    "turn_garage_light_on.wav": {
+      "text": "turn garage light on"
+    },
+    "set_bedroom_light_to_red.wav": {
+      "text": "set bedroom light to red"
+    },
+    "how_cold_is_it.wav": {
+      "text": "how cold is it"
+    },
+    "turn_off_the_garage_light.wav": {
+      "text": "turn off the garage light"
+    },
+    "set_the_bedroom_light_blue.wav": {
+      "text": "set the bedroom light blue"
+    },
+    "turn_bedroom_light_on.wav": {
+      "text": "turn bedroom light on"
+    },
+    "turn_bedroom_light_off.wav": {
+      "text": "turn bedroom light off"
+    },
+    "how_hot_is_it.wav": {
+      "text": "how hot is it"
+    },
+    "turn_on_the_garage_light.wav": {
+      "text": "turn on the garage light"
+    },
+    "set_bedroom_light_green.wav": {
+      "text": "set bedroom light green"
+    },
+    "make_the_bedroom_light_blue.wav": {
+      "text": "make the bedroom light blue"
+    },
+    "turn_off_the_bedroom_light.wav": {
+      "text": "turn off the bedroom light"
+    },
+    "turn_on_garage_light.wav": {
+      "text": "turn on garage light"
+    },
+    "set_the_bedroom_light_to_green.wav": {
+      "text": "set the bedroom light to green"
+    },
+    "turn_off_living_room_lamp.wav": {
+      "text": "turn off living room lamp"
+    },
+    "set_bedroom_light_to_blue.wav": {
+      "text": "set bedroom light to blue"
+    },
+    "what_time_is_it.wav": {
+      "text": "what time is it"
+    },
+    "set_the_bedroom_light_red.wav": {
+      "text": "set the bedroom light red"
+    },
+    "turn_on_the_living_room_lamp.wav": {
+      "text": "turn on the living room lamp"
+    },
+    "turn_off_bedroom_light.wav": {
+      "text": "turn off bedroom light"
+    },
+    "tell_me_the_time.wav": {
+      "text": "tell me the time"
+    },
+    "turn_the_garage_light_off.wav": {
+      "text": "turn the garage light off"
+    },
+    "make_bedroom_light_red.wav": {
+      "text": "make bedroom light red"
+    },
+    "turn_the_living_room_lamp_off.wav": {
+      "text": "turn the living room lamp off"
+    },
+    "set_bedroom_light_blue.wav": {
+      "text": "set bedroom light blue"
+    },
+    "turn_the_bedroom_light_off.wav": {
+      "text": "turn the bedroom light off"
+    },
+    "make_bedroom_light_green.wav": {
+      "text": "make bedroom light green"
+    },
+    "is_the_garage_door_open.wav": {
+      "text": "is the garage door open"
+    },
+    "make_the_bedroom_light_green.wav": {
+      "text": "make the bedroom light green"
+    },
+    "is_the_garage_door_closed.wav": {
+      "text": "is the garage door closed"
+    }
+  }
+}
