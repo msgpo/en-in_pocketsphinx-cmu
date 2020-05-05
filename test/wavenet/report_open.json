@@ -641,54 +641,17 @@
   "actual": {
     "turn_living_room_lamp_off.wav": {
       "intent": {
-        "name": "ChangeLightState",
-        "confidence": 0.8
+        "name": "",
+        "confidence": 0
       },
-      "entities": [
-        {
-          "entity": "state",
-          "value": "on",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        },
-        {
-          "entity": "name",
-          "value": "living room lamp",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        }
-      ],
-      "text": "turn on living room lamp",
-      "raw_text": "turn on living room lamp off",
-      "recognize_seconds": 0.0009500689993728884,
-      "tokens": [
-        "turn",
-        "on",
-        "living",
-        "room",
-        "lamp"
-      ],
-      "raw_tokens": [
-        "turn",
-        "on",
-        "living",
-        "room",
-        "lamp"
-      ],
+      "entities": [],
+      "text": "haven't of",
+      "raw_text": "haven't of",
+      "recognize_seconds": 0,
+      "tokens": [],
+      "raw_tokens": [],
       "wav_seconds": 1.869375,
-      "transcribe_seconds": 0.4231638839992229,
+      "transcribe_seconds": 3.8036189659978845,
       "speech_confidence": null,
       "wav_name": "turn_living_room_lamp_off.wav",
       "expected_intent_name": "",
@@ -703,28 +666,20 @@
           "off"
         ],
         "hypothesis": [
-          "turn",
-          "on",
-          "living",
-          "room",
-          "lamp",
-          "off"
+          "haven't",
+          "of"
         ],
         "differences": [
-          "turn",
-          "+on",
-          "living",
-          "room",
-          "lamp",
-          "off"
+          "lamp:haven't",
+          "off:of"
         ],
         "words": 5,
-        "errors": 1,
-        "matches": 5,
-        "substitutions": 0,
+        "errors": 5,
+        "matches": 0,
+        "substitutions": 2,
         "deletions": 0,
-        "insertions": 1,
-        "error_rate": 0.2
+        "insertions": 0,
+        "error_rate": 0.4
       }
     },
     "make_bedroom_light_green.wav": {
@@ -733,13 +688,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "make the",
-      "raw_text": "make the",
+      "text": "that green",
+      "raw_text": "that green",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.6989375,
-      "transcribe_seconds": 0.5152587820011831,
+      "transcribe_seconds": 3.534858358998463,
       "speech_confidence": null,
       "wav_name": "make_bedroom_light_green.wav",
       "expected_intent_name": "",
@@ -753,22 +708,20 @@
           "green"
         ],
         "hypothesis": [
-          "make",
-          "the"
+          "that",
+          "green"
         ],
         "differences": [
-          "make",
-          "-bedroom",
-          "-light",
-          "green:the"
+          "light:that",
+          "green"
         ],
         "words": 4,
         "errors": 3,
         "matches": 1,
         "substitutions": 1,
-        "deletions": 2,
+        "deletions": 0,
         "insertions": 0,
-        "error_rate": 0.75
+        "error_rate": 0.25
       }
     },
     "turn_off_the_bedroom_light.wav": {
@@ -777,13 +730,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "turn the",
-      "raw_text": "turn the",
+      "text": "not to the",
+      "raw_text": "not to the",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.713375,
-      "transcribe_seconds": 0.48914957699889783,
+      "transcribe_seconds": 2.7998430099978577,
       "speech_confidence": null,
       "wav_name": "turn_off_the_bedroom_light.wav",
       "expected_intent_name": "",
@@ -798,23 +751,24 @@
           "light"
         ],
         "hypothesis": [
-          "turn",
+          "not",
+          "to",
           "the"
         ],
         "differences": [
-          "turn",
-          "-off",
+          "turn:not",
+          "off:to",
           "the",
           "-bedroom",
           "-light"
         ],
         "words": 5,
-        "errors": 3,
-        "matches": 2,
-        "substitutions": 0,
-        "deletions": 3,
+        "errors": 4,
+        "matches": 1,
+        "substitutions": 2,
+        "deletions": 2,
         "insertions": 0,
-        "error_rate": 0.6
+        "error_rate": 0.8
       }
     },
     "set_bedroom_light_blue.wav": {
@@ -823,13 +777,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "set the",
-      "raw_text": "set the",
+      "text": "that no",
+      "raw_text": "that no",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.5358125,
-      "transcribe_seconds": 0.43278501500026323,
+      "transcribe_seconds": 3.1897811250019004,
       "speech_confidence": null,
       "wav_name": "set_bedroom_light_blue.wav",
       "expected_intent_name": "",
@@ -843,76 +797,35 @@
           "blue"
         ],
         "hypothesis": [
-          "set",
-          "the"
+          "that",
+          "no"
         ],
         "differences": [
-          "set",
-          "-bedroom",
-          "-light",
-          "blue:the"
+          "light:that",
+          "blue:no"
         ],
         "words": 4,
-        "errors": 3,
-        "matches": 1,
-        "substitutions": 1,
-        "deletions": 2,
+        "errors": 4,
+        "matches": 0,
+        "substitutions": 2,
+        "deletions": 0,
         "insertions": 0,
-        "error_rate": 0.75
+        "error_rate": 0.5
       }
     },
     "turn_the_living_room_lamp_on.wav": {
       "intent": {
-        "name": "ChangeLightState",
-        "confidence": 1
+        "name": "",
+        "confidence": 0
       },
-      "entities": [
-        {
-          "entity": "name",
-          "value": "living room lamp",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        },
-        {
-          "entity": "state",
-          "value": "on",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        }
-      ],
-      "text": "turn the living room lamp on",
-      "raw_text": "turn the living room lamp on",
-      "recognize_seconds": 0.000838055999338394,
-      "tokens": [
-        "turn",
-        "the",
-        "living",
-        "room",
-        "lamp",
-        "on"
-      ],
-      "raw_tokens": [
-        "turn",
-        "the",
-        "living",
-        "room",
-        "lamp",
-        "on"
-      ],
+      "entities": [],
+      "text": "you want one",
+      "raw_text": "you want one",
+      "recognize_seconds": 0,
+      "tokens": [],
+      "raw_tokens": [],
       "wav_seconds": 1.8754375,
-      "transcribe_seconds": 0.435724933999154,
+      "transcribe_seconds": 3.4244135259978066,
       "speech_confidence": null,
       "wav_name": "turn_the_living_room_lamp_on.wav",
       "expected_intent_name": "",
@@ -928,78 +841,37 @@
           "on"
         ],
         "hypothesis": [
-          "turn",
-          "the",
-          "living",
-          "room",
-          "lamp",
-          "on"
+          "you",
+          "want",
+          "one"
         ],
         "differences": [
-          "turn",
-          "the",
-          "living",
-          "room",
-          "lamp",
-          "on"
+          "room:you",
+          "lamp:want",
+          "on:one"
         ],
         "words": 6,
-        "errors": 0,
-        "matches": 6,
-        "substitutions": 0,
+        "errors": 6,
+        "matches": 0,
+        "substitutions": 3,
         "deletions": 0,
         "insertions": 0,
-        "error_rate": 0
+        "error_rate": 0.5
       }
     },
     "turn_on_garage_light.wav": {
       "intent": {
-        "name": "ChangeLightState",
-        "confidence": 1
+        "name": "",
+        "confidence": 0
       },
-      "entities": [
-        {
-          "entity": "state",
-          "value": "on",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        },
-        {
-          "entity": "name",
-          "value": "garage light",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        }
-      ],
-      "text": "turn on garage light",
-      "raw_text": "turn on garage light",
-      "recognize_seconds": 0.000685349998093443,
-      "tokens": [
-        "turn",
-        "on",
-        "garage",
-        "light"
-      ],
-      "raw_tokens": [
-        "turn",
-        "on",
-        "garage",
-        "light"
-      ],
+      "entities": [],
+      "text": "he",
+      "raw_text": "he",
+      "recognize_seconds": 0,
+      "tokens": [],
+      "raw_tokens": [],
       "wav_seconds": 1.4819375,
-      "transcribe_seconds": 0.3651922780009045,
+      "transcribe_seconds": 2.6588456150020647,
       "speech_confidence": null,
       "wav_name": "turn_on_garage_light.wav",
       "expected_intent_name": "",
@@ -1013,24 +885,18 @@
           "light"
         ],
         "hypothesis": [
-          "turn",
-          "on",
-          "garage",
-          "light"
+          "he"
         ],
         "differences": [
-          "turn",
-          "on",
-          "garage",
-          "light"
+          "light:he"
         ],
         "words": 4,
-        "errors": 0,
-        "matches": 4,
-        "substitutions": 0,
+        "errors": 4,
+        "matches": 0,
+        "substitutions": 1,
         "deletions": 0,
         "insertions": 0,
-        "error_rate": 0
+        "error_rate": 0.25
       }
     },
     "turn_on_bedroom_light.wav": {
@@ -1039,13 +905,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "turn on the",
-      "raw_text": "turn on the",
+      "text": "and the like",
+      "raw_text": "and the like",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.4681875,
-      "transcribe_seconds": 0.37300489600238507,
+      "transcribe_seconds": 3.0136994819986285,
       "speech_confidence": null,
       "wav_name": "turn_on_bedroom_light.wav",
       "expected_intent_name": "",
@@ -1059,23 +925,22 @@
           "light"
         ],
         "hypothesis": [
-          "turn",
-          "on",
-          "the"
+          "and",
+          "the",
+          "like"
         ],
         "differences": [
-          "turn",
-          "on",
-          "-bedroom",
-          "light:the"
+          "on:and",
+          "bedroom:the",
+          "light:like"
         ],
         "words": 4,
-        "errors": 2,
-        "matches": 2,
-        "substitutions": 1,
-        "deletions": 1,
+        "errors": 4,
+        "matches": 0,
+        "substitutions": 3,
+        "deletions": 0,
         "insertions": 0,
-        "error_rate": 0.5
+        "error_rate": 0.75
       }
     },
     "set_the_bedroom_light_green.wav": {
@@ -1084,13 +949,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "set the",
-      "raw_text": "set the",
+      "text": "do they",
+      "raw_text": "do they",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.8740625,
-      "transcribe_seconds": 0.44192193300114013,
+      "transcribe_seconds": 2.916364128002897,
       "speech_confidence": null,
       "wav_name": "set_the_bedroom_light_green.wav",
       "expected_intent_name": "",
@@ -1105,48 +970,35 @@
           "green"
         ],
         "hypothesis": [
-          "set",
-          "the"
+          "do",
+          "they"
         ],
         "differences": [
-          "set",
-          "the",
-          "-bedroom",
-          "-light",
-          "-green"
+          "light:do",
+          "green:they"
         ],
         "words": 5,
-        "errors": 3,
-        "matches": 2,
-        "substitutions": 0,
-        "deletions": 3,
+        "errors": 5,
+        "matches": 0,
+        "substitutions": 2,
+        "deletions": 0,
         "insertions": 0,
-        "error_rate": 0.6
+        "error_rate": 0.4
       }
     },
     "tell_me_the_time.wav": {
       "intent": {
-        "name": "GetTime",
-        "confidence": 1
+        "name": "",
+        "confidence": 0
       },
       "entities": [],
-      "text": "tell me the time",
-      "raw_text": "tell me the time",
-      "recognize_seconds": 0.00032992400156217627,
-      "tokens": [
-        "tell",
-        "me",
-        "the",
-        "time"
-      ],
-      "raw_tokens": [
-        "tell",
-        "me",
-        "the",
-        "time"
-      ],
+      "text": "darling",
+      "raw_text": "darling",
+      "recognize_seconds": 0,
+      "tokens": [],
+      "raw_tokens": [],
       "wav_seconds": 1.0709375,
-      "transcribe_seconds": 0.2955653870012611,
+      "transcribe_seconds": 1.8319501410005614,
       "speech_confidence": null,
       "wav_name": "tell_me_the_time.wav",
       "expected_intent_name": "",
@@ -1160,76 +1012,33 @@
           "time"
         ],
         "hypothesis": [
-          "tell",
-          "me",
-          "the",
-          "time"
+          "darling"
         ],
         "differences": [
-          "tell",
-          "me",
-          "the",
-          "time"
+          "time:darling"
         ],
         "words": 4,
-        "errors": 0,
-        "matches": 4,
-        "substitutions": 0,
+        "errors": 4,
+        "matches": 0,
+        "substitutions": 1,
         "deletions": 0,
         "insertions": 0,
-        "error_rate": 0
+        "error_rate": 0.25
       }
     },
     "turn_on_living_room_lamp.wav": {
       "intent": {
-        "name": "ChangeLightState",
-        "confidence": 1
+        "name": "",
+        "confidence": 0
       },
-      "entities": [
-        {
-          "entity": "state",
-          "value": "on",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        },
-        {
-          "entity": "name",
-          "value": "living room lamp",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        }
-      ],
-      "text": "turn on living room lamp",
-      "raw_text": "turn on living room lamp",
-      "recognize_seconds": 0.0006512920008390211,
-      "tokens": [
-        "turn",
-        "on",
-        "living",
-        "room",
-        "lamp"
-      ],
-      "raw_tokens": [
-        "turn",
-        "on",
-        "living",
-        "room",
-        "lamp"
-      ],
+      "entities": [],
+      "text": "and in new land",
+      "raw_text": "and in new land",
+      "recognize_seconds": 0,
+      "tokens": [],
+      "raw_tokens": [],
       "wav_seconds": 1.7538125,
-      "transcribe_seconds": 0.4069641280002543,
+      "transcribe_seconds": 3.8928599920000124,
       "speech_confidence": null,
       "wav_name": "turn_on_living_room_lamp.wav",
       "expected_intent_name": "",
@@ -1244,80 +1053,39 @@
           "lamp"
         ],
         "hypothesis": [
-          "turn",
-          "on",
-          "living",
-          "room",
-          "lamp"
+          "and",
+          "in",
+          "new",
+          "land"
         ],
         "differences": [
-          "turn",
-          "on",
-          "living",
-          "room",
-          "lamp"
+          "on:and",
+          "living:in",
+          "room:new",
+          "lamp:land"
         ],
         "words": 5,
-        "errors": 0,
-        "matches": 5,
-        "substitutions": 0,
+        "errors": 5,
+        "matches": 0,
+        "substitutions": 4,
         "deletions": 0,
         "insertions": 0,
-        "error_rate": 0
+        "error_rate": 0.8
       }
     },
     "turn_off_the_living_room_lamp.wav": {
       "intent": {
-        "name": "ChangeLightState",
-        "confidence": 1
+        "name": "",
+        "confidence": 0
       },
-      "entities": [
-        {
-          "entity": "state",
-          "value": "on",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        },
-        {
-          "entity": "name",
-          "value": "living room lamp",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        }
-      ],
-      "text": "turn on the living room lamp",
-      "raw_text": "turn on the living room lamp",
-      "recognize_seconds": 0.0008120210004562978,
-      "tokens": [
-        "turn",
-        "on",
-        "the",
-        "living",
-        "room",
-        "lamp"
-      ],
-      "raw_tokens": [
-        "turn",
-        "on",
-        "the",
-        "living",
-        "room",
-        "lamp"
-      ],
+      "entities": [],
+      "text": "not telling you and",
+      "raw_text": "not telling you and",
+      "recognize_seconds": 0,
+      "tokens": [],
+      "raw_tokens": [],
       "wav_seconds": 1.865875,
-      "transcribe_seconds": 0.4726160530008201,
+      "transcribe_seconds": 3.40890371900241,
       "speech_confidence": null,
       "wav_name": "turn_off_the_living_room_lamp.wav",
       "expected_intent_name": "",
@@ -1333,28 +1101,24 @@
           "lamp"
         ],
         "hypothesis": [
-          "turn",
-          "on",
-          "the",
-          "living",
-          "room",
-          "lamp"
+          "not",
+          "telling",
+          "you",
+          "and"
         ],
         "differences": [
-          "turn",
-          "off:on",
-          "the",
-          "living",
-          "room",
-          "lamp"
+          "the:not",
+          "living:telling",
+          "room:you",
+          "lamp:and"
         ],
         "words": 6,
-        "errors": 1,
-        "matches": 5,
-        "substitutions": 1,
+        "errors": 6,
+        "matches": 0,
+        "substitutions": 4,
         "deletions": 0,
         "insertions": 0,
-        "error_rate": 0.16666666666666666
+        "error_rate": 0.6666666666666666
       }
     },
     "make_bedroom_light_blue.wav": {
@@ -1363,13 +1127,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "make the",
-      "raw_text": "make the",
+      "text": "it better like the",
+      "raw_text": "it better like the",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.6304375,
-      "transcribe_seconds": 0.42799895300049684,
+      "transcribe_seconds": 2.7938462069978414,
       "speech_confidence": null,
       "wav_name": "make_bedroom_light_blue.wav",
       "expected_intent_name": "",
@@ -1383,74 +1147,39 @@
           "blue"
         ],
         "hypothesis": [
-          "make",
+          "it",
+          "better",
+          "like",
           "the"
         ],
         "differences": [
-          "make",
-          "-bedroom",
-          "-light",
+          "make:it",
+          "bedroom:better",
+          "light:like",
           "blue:the"
         ],
         "words": 4,
-        "errors": 3,
-        "matches": 1,
-        "substitutions": 1,
-        "deletions": 2,
+        "errors": 4,
+        "matches": 0,
+        "substitutions": 4,
+        "deletions": 0,
         "insertions": 0,
-        "error_rate": 0.75
+        "error_rate": 1
       }
     },
     "turn_off_living_room_lamp.wav": {
       "intent": {
-        "name": "ChangeLightState",
-        "confidence": 1
+        "name": "",
+        "confidence": 0
       },
-      "entities": [
-        {
-          "entity": "state",
-          "value": "off",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        },
-        {
-          "entity": "name",
-          "value": "living room lamp",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        }
-      ],
-      "text": "turn off living room lamp",
-      "raw_text": "turn off living room lamp",
-      "recognize_seconds": 0.0010384099987277295,
-      "tokens": [
-        "turn",
-        "off",
-        "living",
-        "room",
-        "lamp"
-      ],
-      "raw_tokens": [
-        "turn",
-        "off",
-        "living",
-        "room",
-        "lamp"
-      ],
+      "entities": [],
+      "text": "not kidding you and",
+      "raw_text": "not kidding you and",
+      "recognize_seconds": 0,
+      "tokens": [],
+      "raw_tokens": [],
       "wav_seconds": 1.8040625,
-      "transcribe_seconds": 0.5401934229994367,
+      "transcribe_seconds": 3.4400151910012937,
       "speech_confidence": null,
       "wav_name": "turn_off_living_room_lamp.wav",
       "expected_intent_name": "",
@@ -1465,26 +1194,24 @@
           "lamp"
         ],
         "hypothesis": [
-          "turn",
-          "off",
-          "living",
-          "room",
-          "lamp"
+          "not",
+          "kidding",
+          "you",
+          "and"
         ],
         "differences": [
-          "turn",
-          "off",
-          "living",
-          "room",
-          "lamp"
+          "off:not",
+          "living:kidding",
+          "room:you",
+          "lamp:and"
         ],
         "words": 5,
-        "errors": 0,
-        "matches": 5,
-        "substitutions": 0,
+        "errors": 5,
+        "matches": 0,
+        "substitutions": 4,
         "deletions": 0,
         "insertions": 0,
-        "error_rate": 0
+        "error_rate": 0.8
       }
     },
     "set_the_bedroom_light_to_red.wav": {
@@ -1493,13 +1220,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "set the",
-      "raw_text": "set the",
+      "text": "data the",
+      "raw_text": "data the",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.8886875,
-      "transcribe_seconds": 0.39706810699863127,
+      "transcribe_seconds": 2.9047597009994206,
       "speech_confidence": null,
       "wav_name": "set_the_bedroom_light_to_red.wav",
       "expected_intent_name": "",
@@ -1515,11 +1242,11 @@
           "red"
         ],
         "hypothesis": [
-          "set",
+          "data",
           "the"
         ],
         "differences": [
-          "set",
+          "set:data",
           "the",
           "-bedroom",
           "-light",
@@ -1527,12 +1254,12 @@
           "-red"
         ],
         "words": 6,
-        "errors": 4,
-        "matches": 2,
-        "substitutions": 0,
+        "errors": 5,
+        "matches": 1,
+        "substitutions": 1,
         "deletions": 4,
         "insertions": 0,
-        "error_rate": 0.6666666666666666
+        "error_rate": 0.8333333333333334
       }
     },
     "turn_the_bedroom_light_off.wav": {
@@ -1541,13 +1268,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "turn the off",
-      "raw_text": "turn the off",
+      "text": "and the dead right now",
+      "raw_text": "and the dead right now",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.7713125,
-      "transcribe_seconds": 0.42150726600084454,
+      "transcribe_seconds": 2.736377746998187,
       "speech_confidence": null,
       "wav_name": "turn_the_bedroom_light_off.wav",
       "expected_intent_name": "",
@@ -1562,24 +1289,26 @@
           "off"
         ],
         "hypothesis": [
-          "turn",
+          "and",
           "the",
-          "off"
+          "dead",
+          "right",
+          "now"
         ],
         "differences": [
-          "turn",
+          "turn:and",
           "the",
-          "-bedroom",
-          "-light",
-          "off"
+          "bedroom:dead",
+          "light:right",
+          "off:now"
         ],
         "words": 5,
-        "errors": 2,
-        "matches": 3,
-        "substitutions": 0,
-        "deletions": 2,
+        "errors": 4,
+        "matches": 1,
+        "substitutions": 4,
+        "deletions": 0,
         "insertions": 0,
-        "error_rate": 0.4
+        "error_rate": 0.8
       }
     },
     "set_bedroom_light_to_blue.wav": {
@@ -1588,13 +1317,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "turn the",
-      "raw_text": "turn the",
+      "text": "do like the to you",
+      "raw_text": "do like the to you",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.8570625,
-      "transcribe_seconds": 0.4495734820011421,
+      "transcribe_seconds": 3.5530995440021798,
       "speech_confidence": null,
       "wav_name": "set_bedroom_light_to_blue.wav",
       "expected_intent_name": "",
@@ -1609,20 +1338,26 @@
           "blue"
         ],
         "hypothesis": [
-          "turn",
-          "the"
+          "do",
+          "like",
+          "the",
+          "to",
+          "you"
         ],
         "differences": [
-          "to:turn",
-          "blue:the"
+          "set:do",
+          "bedroom:like",
+          "light:the",
+          "to",
+          "blue:you"
         ],
         "words": 5,
-        "errors": 5,
-        "matches": 0,
-        "substitutions": 2,
+        "errors": 4,
+        "matches": 1,
+        "substitutions": 4,
         "deletions": 0,
         "insertions": 0,
-        "error_rate": 0.4
+        "error_rate": 0.8
       }
     },
     "set_the_bedroom_light_to_green.wav": {
@@ -1631,13 +1366,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "set the",
-      "raw_text": "set the",
+      "text": "data the green",
+      "raw_text": "data the green",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.984375,
-      "transcribe_seconds": 0.4124705089998315,
+      "transcribe_seconds": 3.3361979910005175,
       "speech_confidence": null,
       "wav_name": "set_the_bedroom_light_to_green.wav",
       "expected_intent_name": "",
@@ -1653,51 +1388,40 @@
           "green"
         ],
         "hypothesis": [
-          "set",
-          "the"
+          "data",
+          "the",
+          "green"
         ],
         "differences": [
-          "set",
+          "set:data",
           "the",
           "-bedroom",
           "-light",
           "-to",
-          "-green"
+          "green"
         ],
         "words": 6,
         "errors": 4,
         "matches": 2,
-        "substitutions": 0,
-        "deletions": 4,
+        "substitutions": 1,
+        "deletions": 3,
         "insertions": 0,
         "error_rate": 0.6666666666666666
       }
     },
     "is_the_garage_door_closed.wav": {
       "intent": {
-        "name": "GetGarageState",
-        "confidence": 1
+        "name": "",
+        "confidence": 0
       },
       "entities": [],
-      "text": "is the garage door closed",
-      "raw_text": "is the garage door closed",
-      "recognize_seconds": 0.00038568500167457387,
-      "tokens": [
-        "is",
-        "the",
-        "garage",
-        "door",
-        "closed"
-      ],
-      "raw_tokens": [
-        "is",
-        "the",
-        "garage",
-        "door",
-        "closed"
-      ],
+      "text": "if he or close",
+      "raw_text": "if he or close",
+      "recognize_seconds": 0,
+      "tokens": [],
+      "raw_tokens": [],
       "wav_seconds": 1.831875,
-      "transcribe_seconds": 0.45743641599983675,
+      "transcribe_seconds": 3.7836080540000694,
       "speech_confidence": null,
       "wav_name": "is_the_garage_door_closed.wav",
       "expected_intent_name": "",
@@ -1712,26 +1436,24 @@
           "closed"
         ],
         "hypothesis": [
-          "is",
-          "the",
-          "garage",
-          "door",
-          "closed"
+          "if",
+          "he",
+          "or",
+          "close"
         ],
         "differences": [
-          "is",
-          "the",
-          "garage",
-          "door",
-          "closed"
+          "the:if",
+          "garage:he",
+          "door:or",
+          "closed:close"
         ],
         "words": 5,
-        "errors": 0,
-        "matches": 5,
-        "substitutions": 0,
+        "errors": 5,
+        "matches": 0,
+        "substitutions": 4,
         "deletions": 0,
         "insertions": 0,
-        "error_rate": 0
+        "error_rate": 0.8
       }
     },
     "set_the_bedroom_light_blue.wav": {
@@ -1740,13 +1462,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "set the",
-      "raw_text": "set the",
+      "text": "the know",
+      "raw_text": "the know",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.821875,
-      "transcribe_seconds": 0.449952533999749,
+      "transcribe_seconds": 3.194304999000451,
       "speech_confidence": null,
       "wav_name": "set_the_bedroom_light_blue.wav",
       "expected_intent_name": "",
@@ -1761,75 +1483,37 @@
           "blue"
         ],
         "hypothesis": [
-          "set",
-          "the"
+          "the",
+          "know"
         ],
         "differences": [
-          "set",
           "the",
           "-bedroom",
           "-light",
-          "-blue"
+          "blue:know"
         ],
         "words": 5,
-        "errors": 3,
-        "matches": 2,
-        "substitutions": 0,
-        "deletions": 3,
+        "errors": 4,
+        "matches": 1,
+        "substitutions": 1,
+        "deletions": 2,
         "insertions": 0,
         "error_rate": 0.6
       }
     },
     "turn_off_garage_light.wav": {
       "intent": {
-        "name": "ChangeLightState",
-        "confidence": 1
+        "name": "",
+        "confidence": 0
       },
-      "entities": [
-        {
-          "entity": "state",
-          "value": "off",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        },
-        {
-          "entity": "name",
-          "value": "garage light",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        }
-      ],
-      "text": "turn off the garage light",
-      "raw_text": "turn off the garage light",
-      "recognize_seconds": 0.001209670001117047,
-      "tokens": [
-        "turn",
-        "off",
-        "the",
-        "garage",
-        "light"
-      ],
-      "raw_tokens": [
-        "turn",
-        "off",
-        "the",
-        "garage",
-        "light"
-      ],
+      "entities": [],
+      "text": "not the national",
+      "raw_text": "not the national",
+      "recognize_seconds": 0,
+      "tokens": [],
+      "raw_tokens": [],
       "wav_seconds": 1.5268125,
-      "transcribe_seconds": 0.47089358099765377,
+      "transcribe_seconds": 2.9143838279997,
       "speech_confidence": null,
       "wav_name": "turn_off_garage_light.wav",
       "expected_intent_name": "",
@@ -1843,26 +1527,22 @@
           "light"
         ],
         "hypothesis": [
-          "turn",
-          "off",
+          "not",
           "the",
-          "garage",
-          "light"
+          "national"
         ],
         "differences": [
-          "turn",
-          "off",
-          "+the",
-          "garage",
-          "light"
+          "off:not",
+          "garage:the",
+          "light:national"
         ],
         "words": 4,
-        "errors": 1,
-        "matches": 4,
-        "substitutions": 0,
+        "errors": 4,
+        "matches": 0,
+        "substitutions": 3,
         "deletions": 0,
-        "insertions": 1,
-        "error_rate": 0.25
+        "insertions": 0,
+        "error_rate": 0.75
       }
     },
     "set_the_bedroom_light_red.wav": {
@@ -1871,13 +1551,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "set the",
-      "raw_text": "set the",
+      "text": "do a i'm",
+      "raw_text": "do a i'm",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.7854375,
-      "transcribe_seconds": 0.4591239629990014,
+      "transcribe_seconds": 3.0540876260020013,
       "speech_confidence": null,
       "wav_name": "set_the_bedroom_light_red.wav",
       "expected_intent_name": "",
@@ -1892,77 +1572,37 @@
           "red"
         ],
         "hypothesis": [
-          "set",
-          "the"
+          "do",
+          "a",
+          "i'm"
         ],
         "differences": [
-          "set",
-          "the",
-          "-bedroom",
-          "-light",
-          "-red"
+          "bedroom:do",
+          "light:a",
+          "red:i'm"
         ],
         "words": 5,
-        "errors": 3,
-        "matches": 2,
-        "substitutions": 0,
-        "deletions": 3,
+        "errors": 5,
+        "matches": 0,
+        "substitutions": 3,
+        "deletions": 0,
         "insertions": 0,
         "error_rate": 0.6
       }
     },
     "turn_on_the_living_room_lamp.wav": {
       "intent": {
-        "name": "ChangeLightState",
-        "confidence": 1
+        "name": "",
+        "confidence": 0
       },
-      "entities": [
-        {
-          "entity": "state",
-          "value": "on",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        },
-        {
-          "entity": "name",
-          "value": "living room lamp",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        }
-      ],
-      "text": "turn on the living room lamp",
-      "raw_text": "turn on the living room lamp",
-      "recognize_seconds": 0.0009691140003269538,
-      "tokens": [
-        "turn",
-        "on",
-        "the",
-        "living",
-        "room",
-        "lamp"
-      ],
-      "raw_tokens": [
-        "turn",
-        "on",
-        "the",
-        "living",
-        "room",
-        "lamp"
-      ],
+      "entities": [],
+      "text": "not the man",
+      "raw_text": "not the man",
+      "recognize_seconds": 0,
+      "tokens": [],
+      "raw_tokens": [],
       "wav_seconds": 1.8286875,
-      "transcribe_seconds": 0.34575829899767996,
+      "transcribe_seconds": 3.5267290420015343,
       "speech_confidence": null,
       "wav_name": "turn_on_the_living_room_lamp.wav",
       "expected_intent_name": "",
@@ -1978,28 +1618,24 @@
           "lamp"
         ],
         "hypothesis": [
-          "turn",
-          "on",
+          "not",
           "the",
-          "living",
-          "room",
-          "lamp"
+          "man"
         ],
         "differences": [
-          "turn",
-          "on",
+          "on:not",
           "the",
-          "living",
-          "room",
-          "lamp"
+          "-living",
+          "-room",
+          "lamp:man"
         ],
         "words": 6,
-        "errors": 0,
-        "matches": 6,
-        "substitutions": 0,
-        "deletions": 0,
+        "errors": 5,
+        "matches": 1,
+        "substitutions": 2,
+        "deletions": 2,
         "insertions": 0,
-        "error_rate": 0
+        "error_rate": 0.6666666666666666
       }
     },
     "set_bedroom_light_red.wav": {
@@ -2008,13 +1644,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "the",
-      "raw_text": "the",
+      "text": "that right",
+      "raw_text": "that right",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.5356875,
-      "transcribe_seconds": 0.4988188560018898,
+      "transcribe_seconds": 3.151787532999151,
       "speech_confidence": null,
       "wav_name": "set_bedroom_light_red.wav",
       "expected_intent_name": "",
@@ -2028,68 +1664,35 @@
           "red"
         ],
         "hypothesis": [
-          "the"
+          "that",
+          "right"
         ],
         "differences": [
-          "red:the"
+          "light:that",
+          "red:right"
         ],
         "words": 4,
         "errors": 4,
         "matches": 0,
-        "substitutions": 1,
+        "substitutions": 2,
         "deletions": 0,
         "insertions": 0,
-        "error_rate": 0.25
+        "error_rate": 0.5
       }
     },
     "turn_garage_light_off.wav": {
       "intent": {
-        "name": "ChangeLightState",
-        "confidence": 1
+        "name": "",
+        "confidence": 0
       },
-      "entities": [
-        {
-          "entity": "name",
-          "value": "garage light",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        },
-        {
-          "entity": "state",
-          "value": "on",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        }
-      ],
-      "text": "turn garage light on",
-      "raw_text": "turn garage light on",
-      "recognize_seconds": 0.000600432998908218,
-      "tokens": [
-        "turn",
-        "garage",
-        "light",
-        "on"
-      ],
-      "raw_tokens": [
-        "turn",
-        "garage",
-        "light",
-        "on"
-      ],
+      "entities": [],
+      "text": "and the nationality of",
+      "raw_text": "and the nationality of",
+      "recognize_seconds": 0,
+      "tokens": [],
+      "raw_tokens": [],
       "wav_seconds": 1.6310625,
-      "transcribe_seconds": 0.47944623899820726,
+      "transcribe_seconds": 3.4021829000012076,
       "speech_confidence": null,
       "wav_name": "turn_garage_light_off.wav",
       "expected_intent_name": "",
@@ -2103,24 +1706,24 @@
           "off"
         ],
         "hypothesis": [
-          "turn",
-          "garage",
-          "light",
-          "on"
+          "and",
+          "the",
+          "nationality",
+          "of"
         ],
         "differences": [
-          "turn",
-          "garage",
-          "light",
-          "off:on"
+          "turn:and",
+          "garage:the",
+          "light:nationality",
+          "off:of"
         ],
         "words": 4,
-        "errors": 1,
-        "matches": 3,
-        "substitutions": 1,
+        "errors": 4,
+        "matches": 0,
+        "substitutions": 4,
         "deletions": 0,
         "insertions": 0,
-        "error_rate": 0.25
+        "error_rate": 1
       }
     },
     "turn_off_bedroom_light.wav": {
@@ -2129,13 +1732,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "turn on the",
-      "raw_text": "turn on the",
+      "text": "not the",
+      "raw_text": "not the",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.500125,
-      "transcribe_seconds": 0.2876832589972764,
+      "transcribe_seconds": 2.43411241099966,
       "speech_confidence": null,
       "wav_name": "turn_off_bedroom_light.wav",
       "expected_intent_name": "",
@@ -2149,75 +1752,35 @@
           "light"
         ],
         "hypothesis": [
-          "turn",
-          "on",
+          "not",
           "the"
         ],
         "differences": [
-          "turn",
-          "-off",
-          "bedroom:on",
+          "bedroom:not",
           "light:the"
         ],
         "words": 4,
-        "errors": 3,
-        "matches": 1,
+        "errors": 4,
+        "matches": 0,
         "substitutions": 2,
-        "deletions": 1,
+        "deletions": 0,
         "insertions": 0,
-        "error_rate": 0.75
+        "error_rate": 0.5
       }
     },
     "turn_the_garage_light_on.wav": {
       "intent": {
-        "name": "ChangeLightState",
-        "confidence": 1
+        "name": "",
+        "confidence": 0
       },
-      "entities": [
-        {
-          "entity": "name",
-          "value": "garage light",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        },
-        {
-          "entity": "state",
-          "value": "on",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        }
-      ],
-      "text": "turn the garage light on",
-      "raw_text": "turn the garage light on",
-      "recognize_seconds": 0.0007740460023342166,
-      "tokens": [
-        "turn",
-        "the",
-        "garage",
-        "light",
-        "on"
-      ],
-      "raw_tokens": [
-        "turn",
-        "the",
-        "garage",
-        "light",
-        "on"
-      ],
+      "entities": [],
+      "text": "the garage line and",
+      "raw_text": "the garage line and",
+      "recognize_seconds": 0,
+      "tokens": [],
+      "raw_tokens": [],
       "wav_seconds": 1.7806875,
-      "transcribe_seconds": 0.31509867099885014,
+      "transcribe_seconds": 2.1835412820000784,
       "speech_confidence": null,
       "wav_name": "turn_the_garage_light_on.wav",
       "expected_intent_name": "",
@@ -2232,78 +1795,39 @@
           "on"
         ],
         "hypothesis": [
-          "turn",
           "the",
           "garage",
-          "light",
-          "on"
+          "line",
+          "and"
         ],
         "differences": [
-          "turn",
           "the",
           "garage",
-          "light",
-          "on"
+          "light:line",
+          "on:and"
         ],
         "words": 5,
-        "errors": 0,
-        "matches": 5,
-        "substitutions": 0,
+        "errors": 3,
+        "matches": 2,
+        "substitutions": 2,
         "deletions": 0,
         "insertions": 0,
-        "error_rate": 0
+        "error_rate": 0.4
       }
     },
     "turn_on_the_garage_light.wav": {
       "intent": {
-        "name": "ChangeLightState",
-        "confidence": 1
+        "name": "",
+        "confidence": 0
       },
-      "entities": [
-        {
-          "entity": "state",
-          "value": "on",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        },
-        {
-          "entity": "name",
-          "value": "garage light",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        }
-      ],
-      "text": "turn on the garage light",
-      "raw_text": "turn on the garage light",
-      "recognize_seconds": 0.0008320400011143647,
-      "tokens": [
-        "turn",
-        "on",
-        "the",
-        "garage",
-        "light"
-      ],
-      "raw_tokens": [
-        "turn",
-        "on",
-        "the",
-        "garage",
-        "light"
-      ],
+      "entities": [],
+      "text": "and on the national",
+      "raw_text": "and on the national",
+      "recognize_seconds": 0,
+      "tokens": [],
+      "raw_tokens": [],
       "wav_seconds": 1.7390625,
-      "transcribe_seconds": 0.3430934839998372,
+      "transcribe_seconds": 2.6208021249985904,
       "speech_confidence": null,
       "wav_name": "turn_on_the_garage_light.wav",
       "expected_intent_name": "",
@@ -2318,78 +1842,40 @@
           "light"
         ],
         "hypothesis": [
-          "turn",
+          "and",
           "on",
           "the",
-          "garage",
-          "light"
+          "national"
         ],
         "differences": [
-          "turn",
+          "turn:and",
           "on",
           "the",
-          "garage",
-          "light"
+          "-garage",
+          "light:national"
         ],
         "words": 5,
-        "errors": 0,
-        "matches": 5,
-        "substitutions": 0,
-        "deletions": 0,
+        "errors": 3,
+        "matches": 2,
+        "substitutions": 2,
+        "deletions": 1,
         "insertions": 0,
-        "error_rate": 0
+        "error_rate": 0.6
       }
     },
     "turn_the_garage_light_off.wav": {
       "intent": {
-        "name": "ChangeLightState",
-        "confidence": 1
+        "name": "",
+        "confidence": 0
       },
-      "entities": [
-        {
-          "entity": "name",
-          "value": "garage light",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        },
-        {
-          "entity": "state",
-          "value": "on",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        }
-      ],
-      "text": "turn the garage light on",
-      "raw_text": "turn the garage light on",
-      "recognize_seconds": 0.0010935380014416296,
-      "tokens": [
-        "turn",
-        "the",
-        "garage",
-        "light",
-        "on"
-      ],
-      "raw_tokens": [
-        "turn",
-        "the",
-        "garage",
-        "light",
-        "on"
-      ],
+      "entities": [],
+      "text": "and he of",
+      "raw_text": "and he of",
+      "recognize_seconds": 0,
+      "tokens": [],
+      "raw_tokens": [],
       "wav_seconds": 1.8425625,
-      "transcribe_seconds": 0.43112722799924086,
+      "transcribe_seconds": 2.5574079870020796,
       "speech_confidence": null,
       "wav_name": "turn_the_garage_light_off.wav",
       "expected_intent_name": "",
@@ -2404,26 +1890,22 @@
           "off"
         ],
         "hypothesis": [
-          "turn",
-          "the",
-          "garage",
-          "light",
-          "on"
+          "and",
+          "he",
+          "of"
         ],
         "differences": [
-          "turn",
-          "the",
-          "garage",
-          "light",
-          "off:on"
+          "garage:and",
+          "light:he",
+          "off:of"
         ],
         "words": 5,
-        "errors": 1,
-        "matches": 4,
-        "substitutions": 1,
+        "errors": 5,
+        "matches": 0,
+        "substitutions": 3,
         "deletions": 0,
         "insertions": 0,
-        "error_rate": 0.2
+        "error_rate": 0.6
       }
     },
     "turn_bedroom_light_off.wav": {
@@ -2432,13 +1914,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "turn the",
-      "raw_text": "turn the",
+      "text": "dead right now",
+      "raw_text": "dead right now",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.5841875,
-      "transcribe_seconds": 0.37425786000312655,
+      "transcribe_seconds": 2.84035496299839,
       "speech_confidence": null,
       "wav_name": "turn_bedroom_light_off.wav",
       "expected_intent_name": "",
@@ -2452,45 +1934,37 @@
           "off"
         ],
         "hypothesis": [
-          "turn",
-          "the"
+          "dead",
+          "right",
+          "now"
         ],
         "differences": [
-          "turn",
-          "-bedroom",
-          "-light",
-          "off:the"
+          "bedroom:dead",
+          "light:right",
+          "off:now"
         ],
         "words": 4,
-        "errors": 3,
-        "matches": 1,
-        "substitutions": 1,
-        "deletions": 2,
+        "errors": 4,
+        "matches": 0,
+        "substitutions": 3,
+        "deletions": 0,
         "insertions": 0,
         "error_rate": 0.75
       }
     },
     "whats_the_temperature.wav": {
       "intent": {
-        "name": "GetTemperature",
-        "confidence": 1
+        "name": "",
+        "confidence": 0
       },
       "entities": [],
-      "text": "whats the temperature",
-      "raw_text": "whats the temperature",
-      "recognize_seconds": 0.00027942000087932684,
-      "tokens": [
-        "whats",
-        "the",
-        "temperature"
-      ],
-      "raw_tokens": [
-        "whats",
-        "the",
-        "temperature"
-      ],
+      "text": "what we can picture",
+      "raw_text": "what we can picture",
+      "recognize_seconds": 0,
+      "tokens": [],
+      "raw_tokens": [],
       "wav_seconds": 1.2703125,
-      "transcribe_seconds": 0.3417996700009098,
+      "transcribe_seconds": 2.164934598997206,
       "speech_confidence": null,
       "wav_name": "whats_the_temperature.wav",
       "expected_intent_name": "",
@@ -2503,22 +1977,23 @@
           "temperature"
         ],
         "hypothesis": [
-          "whats",
-          "the",
-          "temperature"
+          "what",
+          "we",
+          "can",
+          "picture"
         ],
         "differences": [
-          "whats",
-          "the",
-          "temperature"
+          "whats:we",
+          "the:can",
+          "temperature:picture"
         ],
         "words": 3,
-        "errors": 0,
-        "matches": 3,
-        "substitutions": 0,
+        "errors": 4,
+        "matches": 0,
+        "substitutions": 3,
         "deletions": 0,
         "insertions": 0,
-        "error_rate": 0
+        "error_rate": 1
       }
     },
     "set_bedroom_light_to_green.wav": {
@@ -2527,13 +2002,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "",
-      "raw_text": "",
+      "text": "help to green",
+      "raw_text": "help to green",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.918875,
-      "transcribe_seconds": 0.4741471239976818,
+      "transcribe_seconds": 3.0563997979988926,
       "speech_confidence": null,
       "wav_name": "set_bedroom_light_to_green.wav",
       "expected_intent_name": "",
@@ -2547,42 +2022,38 @@
           "to",
           "green"
         ],
-        "hypothesis": [],
-        "differences": [],
-        "words": 0,
-        "errors": 0,
-        "matches": 0,
-        "substitutions": 0,
+        "hypothesis": [
+          "help",
+          "to",
+          "green"
+        ],
+        "differences": [
+          "light:help",
+          "to",
+          "green"
+        ],
+        "words": 5,
+        "errors": 3,
+        "matches": 2,
+        "substitutions": 1,
         "deletions": 0,
         "insertions": 0,
-        "error_rate": 1
+        "error_rate": 0.2
       }
     },
     "is_the_garage_door_open.wav": {
       "intent": {
-        "name": "GetGarageState",
-        "confidence": 1
+        "name": "",
+        "confidence": 0
       },
       "entities": [],
-      "text": "is the garage door open",
-      "raw_text": "is the garage door open",
-      "recognize_seconds": 0.0003299950003565755,
-      "tokens": [
-        "is",
-        "the",
-        "garage",
-        "door",
-        "open"
-      ],
-      "raw_tokens": [
-        "is",
-        "the",
-        "garage",
-        "door",
-        "open"
-      ],
+      "text": "if the lads your friend",
+      "raw_text": "if the lads your friend",
+      "recognize_seconds": 0,
+      "tokens": [],
+      "raw_tokens": [],
       "wav_seconds": 1.788875,
-      "transcribe_seconds": 0.328767244998744,
+      "transcribe_seconds": 3.033369272998243,
       "speech_confidence": null,
       "wav_name": "is_the_garage_door_open.wav",
       "expected_intent_name": "",
@@ -2597,26 +2068,26 @@
           "open"
         ],
         "hypothesis": [
-          "is",
+          "if",
           "the",
-          "garage",
-          "door",
-          "open"
+          "lads",
+          "your",
+          "friend"
         ],
         "differences": [
-          "is",
+          "is:if",
           "the",
-          "garage",
-          "door",
-          "open"
+          "garage:lads",
+          "door:your",
+          "open:friend"
         ],
         "words": 5,
-        "errors": 0,
-        "matches": 5,
-        "substitutions": 0,
+        "errors": 4,
+        "matches": 1,
+        "substitutions": 4,
         "deletions": 0,
         "insertions": 0,
-        "error_rate": 0
+        "error_rate": 0.8
       }
     },
     "make_the_bedroom_light_red.wav": {
@@ -2625,13 +2096,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "make the",
-      "raw_text": "make the",
+      "text": "no the back",
+      "raw_text": "no the back",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.7993125,
-      "transcribe_seconds": 0.3888092829984089,
+      "transcribe_seconds": 3.0912137990017072,
       "speech_confidence": null,
       "wav_name": "make_the_bedroom_light_red.wav",
       "expected_intent_name": "",
@@ -2646,77 +2117,39 @@
           "red"
         ],
         "hypothesis": [
-          "make",
-          "the"
+          "no",
+          "the",
+          "back"
         ],
         "differences": [
-          "make",
+          "make:no",
           "the",
           "-bedroom",
           "-light",
-          "-red"
+          "red:back"
         ],
         "words": 5,
-        "errors": 3,
-        "matches": 2,
-        "substitutions": 0,
-        "deletions": 3,
+        "errors": 4,
+        "matches": 1,
+        "substitutions": 2,
+        "deletions": 2,
         "insertions": 0,
-        "error_rate": 0.6
+        "error_rate": 0.8
       }
     },
     "turn_the_living_room_lamp_off.wav": {
       "intent": {
-        "name": "ChangeLightState",
-        "confidence": 1
+        "name": "",
+        "confidence": 0
       },
-      "entities": [
-        {
-          "entity": "name",
-          "value": "living room lamp",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        },
-        {
-          "entity": "state",
-          "value": "off",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        }
-      ],
-      "text": "turn the living room lamp off",
-      "raw_text": "turn the living room lamp off",
-      "recognize_seconds": 0.0007893760011938866,
-      "tokens": [
-        "turn",
-        "the",
-        "living",
-        "room",
-        "lamp",
-        "off"
-      ],
-      "raw_tokens": [
-        "turn",
-        "the",
-        "living",
-        "room",
-        "lamp",
-        "off"
-      ],
+      "entities": [],
+      "text": "on they haven't of",
+      "raw_text": "on they haven't of",
+      "recognize_seconds": 0,
+      "tokens": [],
+      "raw_tokens": [],
       "wav_seconds": 1.9220625,
-      "transcribe_seconds": 0.4701283480026177,
+      "transcribe_seconds": 3.0772607889994106,
       "speech_confidence": null,
       "wav_name": "turn_the_living_room_lamp_off.wav",
       "expected_intent_name": "",
@@ -2732,28 +2165,24 @@
           "off"
         ],
         "hypothesis": [
-          "turn",
-          "the",
-          "living",
-          "room",
-          "lamp",
-          "off"
+          "on",
+          "they",
+          "haven't",
+          "of"
         ],
         "differences": [
-          "turn",
-          "the",
-          "living",
-          "room",
-          "lamp",
-          "off"
+          "living:on",
+          "room:they",
+          "lamp:haven't",
+          "off:of"
         ],
         "words": 6,
-        "errors": 0,
-        "matches": 6,
-        "substitutions": 0,
+        "errors": 6,
+        "matches": 0,
+        "substitutions": 4,
         "deletions": 0,
         "insertions": 0,
-        "error_rate": 0
+        "error_rate": 0.6666666666666666
       }
     },
     "set_bedroom_light_green.wav": {
@@ -2762,13 +2191,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "set the",
-      "raw_text": "set the",
+      "text": "the",
+      "raw_text": "the",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.606,
-      "transcribe_seconds": 0.4169149789995572,
+      "transcribe_seconds": 2.938113771000644,
       "speech_confidence": null,
       "wav_name": "set_bedroom_light_green.wav",
       "expected_intent_name": "",
@@ -2782,22 +2211,18 @@
           "green"
         ],
         "hypothesis": [
-          "set",
           "the"
         ],
         "differences": [
-          "set",
-          "-bedroom",
-          "-light",
           "green:the"
         ],
         "words": 4,
-        "errors": 3,
-        "matches": 1,
+        "errors": 4,
+        "matches": 0,
         "substitutions": 1,
-        "deletions": 2,
+        "deletions": 0,
         "insertions": 0,
-        "error_rate": 0.75
+        "error_rate": 0.25
       }
     },
     "make_the_bedroom_light_green.wav": {
@@ -2806,13 +2231,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "make the",
-      "raw_text": "make the",
+      "text": "it that green",
+      "raw_text": "it that green",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.883375,
-      "transcribe_seconds": 0.36296847099947627,
+      "transcribe_seconds": 2.9337888449990714,
       "speech_confidence": null,
       "wav_name": "make_the_bedroom_light_green.wav",
       "expected_intent_name": "",
@@ -2827,23 +2252,22 @@
           "green"
         ],
         "hypothesis": [
-          "make",
-          "the"
+          "it",
+          "that",
+          "green"
         ],
         "differences": [
-          "make",
-          "the",
-          "-bedroom",
-          "-light",
-          "-green"
+          "bedroom:it",
+          "light:that",
+          "green"
         ],
         "words": 5,
-        "errors": 3,
-        "matches": 2,
-        "substitutions": 0,
-        "deletions": 3,
+        "errors": 4,
+        "matches": 1,
+        "substitutions": 2,
+        "deletions": 0,
         "insertions": 0,
-        "error_rate": 0.6
+        "error_rate": 0.4
       }
     },
     "how_hot_is_it.wav": {
@@ -2852,13 +2276,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "",
-      "raw_text": "",
+      "text": "the",
+      "raw_text": "the",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.1364375,
-      "transcribe_seconds": 0.23347111499970197,
+      "transcribe_seconds": 1.7444904590010992,
       "speech_confidence": null,
       "wav_name": "how_hot_is_it.wav",
       "expected_intent_name": "",
@@ -2871,67 +2295,34 @@
           "is",
           "it"
         ],
-        "hypothesis": [],
-        "differences": [],
-        "words": 0,
-        "errors": 0,
+        "hypothesis": [
+          "the"
+        ],
+        "differences": [
+          "it:the"
+        ],
+        "words": 4,
+        "errors": 4,
         "matches": 0,
-        "substitutions": 0,
+        "substitutions": 1,
         "deletions": 0,
         "insertions": 0,
-        "error_rate": 1
+        "error_rate": 0.25
       }
     },
     "turn_off_the_garage_light.wav": {
       "intent": {
-        "name": "ChangeLightState",
-        "confidence": 1
+        "name": "",
+        "confidence": 0
       },
-      "entities": [
-        {
-          "entity": "state",
-          "value": "off",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        },
-        {
-          "entity": "name",
-          "value": "garage light",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        }
-      ],
-      "text": "turn off the garage light",
-      "raw_text": "turn off the garage light",
-      "recognize_seconds": 0.0016543320016353391,
-      "tokens": [
-        "turn",
-        "off",
-        "the",
-        "garage",
-        "light"
-      ],
-      "raw_tokens": [
-        "turn",
-        "off",
-        "the",
-        "garage",
-        "light"
-      ],
+      "entities": [],
+      "text": "he",
+      "raw_text": "he",
+      "recognize_seconds": 0,
+      "tokens": [],
+      "raw_tokens": [],
       "wav_seconds": 1.7536875,
-      "transcribe_seconds": 0.3582446360014728,
+      "transcribe_seconds": 2.3144898360005755,
       "speech_confidence": null,
       "wav_name": "turn_off_the_garage_light.wav",
       "expected_intent_name": "",
@@ -2946,26 +2337,18 @@
           "light"
         ],
         "hypothesis": [
-          "turn",
-          "off",
-          "the",
-          "garage",
-          "light"
+          "he"
         ],
         "differences": [
-          "turn",
-          "off",
-          "the",
-          "garage",
-          "light"
+          "light:he"
         ],
         "words": 5,
-        "errors": 0,
-        "matches": 5,
-        "substitutions": 0,
+        "errors": 5,
+        "matches": 0,
+        "substitutions": 1,
         "deletions": 0,
         "insertions": 0,
-        "error_rate": 0
+        "error_rate": 0.2
       }
     },
     "turn_bedroom_light_on.wav": {
@@ -2974,13 +2357,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "turn the on",
-      "raw_text": "turn the on",
+      "text": "and then to like and",
+      "raw_text": "and then to like and",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.51225,
-      "transcribe_seconds": 0.32447613200201886,
+      "transcribe_seconds": 2.1591119849981624,
       "speech_confidence": null,
       "wav_name": "turn_bedroom_light_on.wav",
       "expected_intent_name": "",
@@ -2994,23 +2377,25 @@
           "on"
         ],
         "hypothesis": [
-          "turn",
-          "the",
-          "on"
+          "and",
+          "then",
+          "to",
+          "like",
+          "and"
         ],
         "differences": [
-          "turn",
-          "-bedroom",
-          "light:the",
-          "on"
+          "turn:then",
+          "bedroom:to",
+          "light:like",
+          "on:and"
         ],
         "words": 4,
-        "errors": 2,
-        "matches": 2,
-        "substitutions": 1,
-        "deletions": 1,
+        "errors": 5,
+        "matches": 0,
+        "substitutions": 4,
+        "deletions": 0,
         "insertions": 0,
-        "error_rate": 0.5
+        "error_rate": 1
       }
     },
     "turn_on_the_bedroom_light.wav": {
@@ -3019,13 +2404,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "turn on the",
-      "raw_text": "turn on the",
+      "text": "not the",
+      "raw_text": "not the",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.6889375,
-      "transcribe_seconds": 0.2895806699998502,
+      "transcribe_seconds": 2.214318305999768,
       "speech_confidence": null,
       "wav_name": "turn_on_the_bedroom_light.wav",
       "expected_intent_name": "",
@@ -3040,49 +2425,37 @@
           "light"
         ],
         "hypothesis": [
-          "turn",
-          "on",
+          "not",
           "the"
         ],
         "differences": [
-          "turn",
-          "on",
+          "on:not",
           "the",
           "-bedroom",
           "-light"
         ],
         "words": 5,
-        "errors": 2,
-        "matches": 3,
-        "substitutions": 0,
+        "errors": 4,
+        "matches": 1,
+        "substitutions": 1,
         "deletions": 2,
         "insertions": 0,
-        "error_rate": 0.4
+        "error_rate": 0.6
       }
     },
     "how_cold_is_it.wav": {
       "intent": {
-        "name": "GetTemperature",
-        "confidence": 1
+        "name": "",
+        "confidence": 0
       },
       "entities": [],
-      "text": "how cold is it",
-      "raw_text": "how cold is it",
-      "recognize_seconds": 0.00035256599949207157,
-      "tokens": [
-        "how",
-        "cold",
-        "is",
-        "it"
-      ],
-      "raw_tokens": [
-        "how",
-        "cold",
-        "is",
-        "it"
-      ],
+      "text": "to the",
+      "raw_text": "to the",
+      "recognize_seconds": 0,
+      "tokens": [],
+      "raw_tokens": [],
       "wav_seconds": 1.1351875,
-      "transcribe_seconds": 0.28644002600049134,
+      "transcribe_seconds": 1.8575843689977773,
       "speech_confidence": null,
       "wav_name": "how_cold_is_it.wav",
       "expected_intent_name": "",
@@ -3096,24 +2469,20 @@
           "it"
         ],
         "hypothesis": [
-          "how",
-          "cold",
-          "is",
-          "it"
+          "to",
+          "the"
         ],
         "differences": [
-          "how",
-          "cold",
-          "is",
-          "it"
+          "is:to",
+          "it:the"
         ],
         "words": 4,
-        "errors": 0,
-        "matches": 4,
-        "substitutions": 0,
+        "errors": 4,
+        "matches": 0,
+        "substitutions": 2,
         "deletions": 0,
         "insertions": 0,
-        "error_rate": 0
+        "error_rate": 0.5
       }
     },
     "turn_the_bedroom_light_on.wav": {
@@ -3122,13 +2491,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "turn the on",
-      "raw_text": "turn the on",
+      "text": "and the data like and",
+      "raw_text": "and the data like and",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.7113125,
-      "transcribe_seconds": 0.28271797400157084,
+      "transcribe_seconds": 2.028147135002655,
       "speech_confidence": null,
       "wav_name": "turn_the_bedroom_light_on.wav",
       "expected_intent_name": "",
@@ -3143,24 +2512,26 @@
           "on"
         ],
         "hypothesis": [
-          "turn",
+          "and",
           "the",
-          "on"
+          "data",
+          "like",
+          "and"
         ],
         "differences": [
-          "turn",
+          "turn:and",
           "the",
-          "-bedroom",
-          "-light",
-          "on"
+          "bedroom:data",
+          "light:like",
+          "on:and"
         ],
         "words": 5,
-        "errors": 2,
-        "matches": 3,
-        "substitutions": 0,
-        "deletions": 2,
+        "errors": 4,
+        "matches": 1,
+        "substitutions": 4,
+        "deletions": 0,
         "insertions": 0,
-        "error_rate": 0.4
+        "error_rate": 0.8
       }
     },
     "make_bedroom_light_red.wav": {
@@ -3169,13 +2540,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "make the",
-      "raw_text": "make the",
+      "text": "better like a very",
+      "raw_text": "better like a very",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.6043125,
-      "transcribe_seconds": 0.4057010590004211,
+      "transcribe_seconds": 2.5153271919989493,
       "speech_confidence": null,
       "wav_name": "make_bedroom_light_red.wav",
       "expected_intent_name": "",
@@ -3189,74 +2560,39 @@
           "red"
         ],
         "hypothesis": [
-          "make",
-          "the"
+          "better",
+          "like",
+          "a",
+          "very"
         ],
         "differences": [
-          "make",
-          "-bedroom",
-          "-light",
-          "red:the"
+          "make:better",
+          "bedroom:like",
+          "light:a",
+          "red:very"
         ],
         "words": 4,
-        "errors": 3,
-        "matches": 1,
-        "substitutions": 1,
-        "deletions": 2,
+        "errors": 4,
+        "matches": 0,
+        "substitutions": 4,
+        "deletions": 0,
         "insertions": 0,
-        "error_rate": 0.75
+        "error_rate": 1
       }
     },
     "turn_living_room_lamp_on.wav": {
       "intent": {
-        "name": "ChangeLightState",
-        "confidence": 1
+        "name": "",
+        "confidence": 0
       },
-      "entities": [
-        {
-          "entity": "name",
-          "value": "living room lamp",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        },
-        {
-          "entity": "state",
-          "value": "on",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        }
-      ],
-      "text": "turn living room lamp on",
-      "raw_text": "turn living room lamp on",
-      "recognize_seconds": 0.0006979380013945047,
-      "tokens": [
-        "turn",
-        "living",
-        "room",
-        "lamp",
-        "on"
-      ],
-      "raw_tokens": [
-        "turn",
-        "living",
-        "room",
-        "lamp",
-        "on"
-      ],
+      "entities": [],
+      "text": "then into that non",
+      "raw_text": "then into that non",
+      "recognize_seconds": 0,
+      "tokens": [],
+      "raw_tokens": [],
       "wav_seconds": 1.8249375,
-      "transcribe_seconds": 0.41729364600178087,
+      "transcribe_seconds": 2.590299280000181,
       "speech_confidence": null,
       "wav_name": "turn_living_room_lamp_on.wav",
       "expected_intent_name": "",
@@ -3271,26 +2607,24 @@
           "on"
         ],
         "hypothesis": [
-          "turn",
-          "living",
-          "room",
-          "lamp",
-          "on"
+          "then",
+          "into",
+          "that",
+          "non"
         ],
         "differences": [
-          "turn",
-          "living",
-          "room",
-          "lamp",
-          "on"
+          "living:then",
+          "room:into",
+          "lamp:that",
+          "on:non"
         ],
         "words": 5,
-        "errors": 0,
-        "matches": 5,
-        "substitutions": 0,
+        "errors": 5,
+        "matches": 0,
+        "substitutions": 4,
         "deletions": 0,
         "insertions": 0,
-        "error_rate": 0
+        "error_rate": 0.8
       }
     },
     "make_the_bedroom_light_blue.wav": {
@@ -3299,13 +2633,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "make the light blue",
-      "raw_text": "make the light blue",
+      "text": "that being",
+      "raw_text": "that being",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.8198125,
-      "transcribe_seconds": 0.3906571299994539,
+      "transcribe_seconds": 1.9467656030028593,
       "speech_confidence": null,
       "wav_name": "make_the_bedroom_light_blue.wav",
       "expected_intent_name": "",
@@ -3320,25 +2654,20 @@
           "blue"
         ],
         "hypothesis": [
-          "make",
-          "the",
-          "light",
-          "blue"
+          "that",
+          "being"
         ],
         "differences": [
-          "make",
-          "the",
-          "-bedroom",
-          "light",
-          "blue"
+          "light:that",
+          "blue:being"
         ],
         "words": 5,
-        "errors": 1,
-        "matches": 4,
-        "substitutions": 0,
-        "deletions": 1,
+        "errors": 5,
+        "matches": 0,
+        "substitutions": 2,
+        "deletions": 0,
         "insertions": 0,
-        "error_rate": 0.2
+        "error_rate": 0.4
       }
     },
     "set_the_bedroom_light_to_blue.wav": {
@@ -3347,13 +2676,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "set the",
-      "raw_text": "set the",
+      "text": "die for blue",
+      "raw_text": "die for blue",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.9223125,
-      "transcribe_seconds": 0.3420627739978954,
+      "transcribe_seconds": 2.09650223099743,
       "speech_confidence": null,
       "wav_name": "set_the_bedroom_light_to_blue.wav",
       "expected_intent_name": "",
@@ -3369,24 +2698,22 @@
           "blue"
         ],
         "hypothesis": [
-          "set",
-          "the"
+          "die",
+          "for",
+          "blue"
         ],
         "differences": [
-          "set",
-          "the",
-          "-bedroom",
-          "-light",
-          "-to",
-          "-blue"
+          "light:die",
+          "to:for",
+          "blue"
         ],
         "words": 6,
-        "errors": 4,
-        "matches": 2,
-        "substitutions": 0,
-        "deletions": 4,
+        "errors": 5,
+        "matches": 1,
+        "substitutions": 2,
+        "deletions": 0,
         "insertions": 0,
-        "error_rate": 0.6666666666666666
+        "error_rate": 0.3333333333333333
       }
     },
     "set_bedroom_light_to_red.wav": {
@@ -3395,13 +2722,13 @@
         "confidence": 0
       },
       "entities": [],
-      "text": "turn the",
-      "raw_text": "turn the",
+      "text": "do like to have a",
+      "raw_text": "do like to have a",
       "recognize_seconds": 0,
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.8243125,
-      "transcribe_seconds": 0.4749953079990519,
+      "transcribe_seconds": 1.991559882000729,
       "speech_confidence": null,
       "wav_name": "set_bedroom_light_to_red.wav",
       "expected_intent_name": "",
@@ -3416,70 +2743,41 @@
           "red"
         ],
         "hypothesis": [
-          "turn",
-          "the"
+          "do",
+          "like",
+          "to",
+          "have",
+          "a"
         ],
         "differences": [
-          "to:turn",
-          "red:the"
+          "set:do",
+          "bedroom:like",
+          "light:to",
+          "to:have",
+          "red:a"
         ],
         "words": 5,
         "errors": 5,
         "matches": 0,
-        "substitutions": 2,
+        "substitutions": 5,
         "deletions": 0,
         "insertions": 0,
-        "error_rate": 0.4
+        "error_rate": 1
       }
     },
     "turn_garage_light_on.wav": {
       "intent": {
-        "name": "ChangeLightState",
-        "confidence": 0.75
+        "name": "",
+        "confidence": 0
       },
-      "entities": [
-        {
-          "entity": "state",
-          "value": "on",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        },
-        {
-          "entity": "name",
-          "value": "garage light",
-          "raw_value": "",
-          "source": "",
-          "start": 0,
-          "raw_start": 0,
-          "end": 0,
-          "raw_end": 0,
-          "tokens": [],
-          "raw_tokens": []
-        }
-      ],
-      "text": "turn on garage light",
-      "raw_text": "turn on garage light on",
-      "recognize_seconds": 0.0003527170010784175,
-      "tokens": [
-        "turn",
-        "on",
-        "garage",
-        "light"
-      ],
-      "raw_tokens": [
-        "turn",
-        "on",
-        "garage",
-        "light"
-      ],
+      "entities": [],
+      "text": "and ask him",
+      "raw_text": "and ask him",
+      "recognize_seconds": 0,
+      "tokens": [],
+      "raw_tokens": [],
       "wav_seconds": 1.56525,
-      "transcribe_seconds": 0.3753086880024057,
+      "transcribe_seconds": 2.1655284259977634,
       "speech_confidence": null,
       "wav_name": "turn_garage_light_on.wav",
       "expected_intent_name": "",
@@ -3493,26 +2791,22 @@
           "on"
         ],
         "hypothesis": [
-          "turn",
-          "on",
-          "garage",
-          "light",
-          "on"
+          "and",
+          "ask",
+          "him"
         ],
         "differences": [
-          "turn",
-          "+on",
-          "garage",
-          "light",
-          "on"
+          "garage:and",
+          "light:ask",
+          "on:him"
         ],
         "words": 4,
-        "errors": 1,
-        "matches": 4,
-        "substitutions": 0,
+        "errors": 4,
+        "matches": 0,
+        "substitutions": 3,
         "deletions": 0,
-        "insertions": 1,
-        "error_rate": 0.25
+        "insertions": 0,
+        "error_rate": 0.75
       }
     },
     "what_time_is_it.wav": {
@@ -3527,7 +2821,7 @@
       "tokens": [],
       "raw_tokens": [],
       "wav_seconds": 1.1301875,
-      "transcribe_seconds": 0.10295856800075853,
+      "transcribe_seconds": 0.6814530489973549,
       "speech_confidence": null,
       "wav_name": "what_time_is_it.wav",
       "expected_intent_name": "",
@@ -3557,17 +2851,17 @@
     }
   },
   "num_wavs": 49,
-  "num_words": 223,
+  "num_words": 232,
   "num_intents": 0,
   "num_entities": 0,
-  "correct_transcriptions": 15,
+  "correct_transcriptions": 0,
   "correct_intent_names": 0,
-  "correct_words": 140,
+  "correct_words": 21,
   "correct_entities": 0,
   "correct_intent_and_entities": 0,
-  "transcription_accuracy": 0.6278026905829597,
+  "transcription_accuracy": 0.09051724137931035,
   "intent_accuracy": 1,
   "entity_accuracy": 1,
   "intent_entity_accuracy": 1,
-  "average_transcription_speedup": 4.4583503653603085
+  "average_transcription_speedup": 0.6417483267323759
 }
