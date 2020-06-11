@@ -1,7 +1,7 @@
 aa A@
 ae a
 ah V
-ao O:
+ao o@
 aw aU
 ax @
 ay aI
@@ -18,7 +18,7 @@ g g
 hh h
 ia i@
 ih I
-iy i:
+iy i
 jh dZ
 k k
 l l
@@ -34,7 +34,7 @@ s s
 sh S
 t t
 th T
-ua u:
+ua U@
 uh U
 uw u:
 v v
